@@ -765,14 +765,12 @@ Some components are hypothetical extensions of existing patterns.
 """
 
 import json
-from typing import Any, Annotated
-from collections.abc import MutableSequence
-from dataclasses import dataclass
+from typing import Annotated
 
 from agent_framework import (
-    BaseAgent, ChatAgent, ChatMessage, ChatMessageStoreProtocol,
-    Context, ContextProvider, Role, TextContent, AgentRunResponse,
-    AgentThread, ai_function,
+    ChatMessage, ChatMessageStoreProtocol,
+    Context, ContextProvider, Role, TextContent,
+    ai_function,
 )
 from agent_framework.azure import AzureOpenAIChatClient
 from azure.ai.agentserver.agentframework import from_agent_framework
